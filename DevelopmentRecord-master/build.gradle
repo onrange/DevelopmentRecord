@@ -1,0 +1,32 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext.objectboxVersion = '2.8.1'
+    repositories {
+        google()
+        jcenter()
+        // GreenDao仓库
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.5.4'
+        // GreenDao插件
+        classpath 'org.greenrobot:greendao-gradle-plugin:3.2.2'
+        // ObjectBox插件
+        classpath "io.objectbox:objectbox-gradle-plugin:$objectboxVersion"
+        //ARouter插件依赖
+        classpath "com.alibaba:arouter-register:1.0.2"
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url "https://jitpack.io" }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

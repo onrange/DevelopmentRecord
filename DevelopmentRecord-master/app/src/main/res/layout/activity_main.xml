@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_bottom_alignment"
+        style="@style/ButtonStyle"
+        android:text="TextView底部对齐" />
+
+    <Button
+        android:id="@+id/btn_advanced_text_view"
+
+        style="@style/ButtonStyle"
+        android:text="SpannableStringBuilder使用" />
+
+    <Button
+        android:id="@+id/btn_foreground_service"
+        style="@style/ButtonStyle"
+        android:text="前台服务" />
+
+    <Button
+        android:id="@+id/btn_mqtt"
+        style="@style/ButtonStyle"
+        android:text="MQTT收发指令" />
+
+    <Button
+        android:id="@+id/btn_floating_window"
+        style="@style/ButtonStyle"
+        android:text="悬浮窗" />
+
+    <Button
+        android:id="@+id/btn_green_dao"
+        style="@style/ButtonStyle"
+        android:text="GreenDao数据库" />
+
+    <Button
+        android:id="@+id/btn_object_box"
+        style="@style/ButtonStyle"
+        android:text="ObjectBox数据库" />
+
+</LinearLayout>
